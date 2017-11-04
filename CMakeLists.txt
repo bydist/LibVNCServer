@@ -14,7 +14,7 @@ if(components_to_build)
         else()
             set(flag OFF)
         endif()
-        byd__cmake__configure__add_arg(${package} LIBVNCSERVER_BUILD_${component} ${flags})
+        byd__cmake__configure__add_arg(${package} LIBVNCSERVER_BUILD_${component} ${flag})
     endforeach()
 endif()
 
