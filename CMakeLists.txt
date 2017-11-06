@@ -20,10 +20,10 @@ endif()
 
 
 
-byd__cmake__configure__add_arg(${package} LIBVNCSERVER_use_jpeg_compression ON)
-byd__cmake__configure__add_arg(${package} LIBVNCSERVER_use_png_compression  ON)
-byd__cmake__configure__add_arg(${package} LIBVNCSERVER_use_zlib_compression ON)
-byd__cmake__configure__add_arg(${package} LIBVNCSERVER_use_openssl          ON)
+byd__cmake__configure__add_arg(${package} LIBVNCSERVER_use_jpeg_compression OFF)
+byd__cmake__configure__add_arg(${package} LIBVNCSERVER_use_png_compression  OFF)
+byd__cmake__configure__add_arg(${package} LIBVNCSERVER_use_zlib_compression OFF)
+byd__cmake__configure__add_arg(${package} LIBVNCSERVER_use_openssl          OFF)
 
 
 byd__cmake__add(${package} SKIP test)
